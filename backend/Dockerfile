@@ -1,11 +1,13 @@
-# Usa a imagem do OpenJDK 11
-FROM openjdk:11-jdk-slim
+FROM maven AS builder
+WORKDIR /app
+COPY . .
+RUN mvn clean package -DskipTests
 
-# Define o diretório de trabalho dentro do contêiner
+FROM openjdk:17-jdk-slim
+
 WORKDIR /app
 
-# Copia o arquivo JAR gerado pelo Maven para o contêiner
-COPY target/*.jar app.jar
+COPY --from=builder /app/target/*.jar app.jar
 
 # Expõe a porta 8080
 EXPOSE 8080
