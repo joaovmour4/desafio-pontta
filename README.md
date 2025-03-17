@@ -5,10 +5,10 @@
 
   
 # Como rodar o projeto
-cd backend
-mvn clean package
-mvn spring-boot:run
+- cd backend
+- mvn clean package
+- mvn spring-boot:run
 
-Em outro cmd:
-cd frontend
-ng serve --open
+# Em outro cmd:
+- cd frontend
+- ng serve --open
