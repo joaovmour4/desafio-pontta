@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-HardwareShoppingApplication<hardware-shopping>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.pontta.hardware_shopping.HardwareShoppingApplication",
+            "projectName": "hardware-shopping",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

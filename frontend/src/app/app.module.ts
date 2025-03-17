@@ -5,10 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UsersComponent } from './users/users.component';
+import { UsersFormComponent } from './users-form/users-form.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductsFormComponent } from './products-form/products-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsersComponent,
+    UsersFormComponent,
+    ProductsComponent,
+    ProductsFormComponent
   ],
   imports: [
     BrowserModule,
